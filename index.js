@@ -192,6 +192,7 @@ function inchToFeet(inch){
     return feet;
 }
 
+
 //14.2 Unit Convert kilometer to meter use variable and function
 function kilometerToMeter(kilometer){
     var meter=kilometer*1000;
@@ -209,6 +210,7 @@ function isLeapYear(year) {
         return false;
     }
 }
+
 
 //16: Check whether a number is a Prime Number or not
 function isPrime(n) {
