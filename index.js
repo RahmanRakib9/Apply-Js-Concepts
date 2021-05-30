@@ -1,52 +1,73 @@
-//Find max of two values, find max of three values
-// var business = n;
-// var minister = n;
-// var doctor = n;
+//1.1: Calculate Factorial of a number using for loop
+function getFactorial(number) {
+    var factorial = 1;
+    for (var i = 1; i <= number; i++) {
+        factorial = factorial * i;
+    }
+    return factorial;
+}
+    var result = getFactorial(5);
+    console.log(result);
 
-// if (business > minister) {
-//     if (business > doctor) {
-//         console.log('businee is bigger');
-//     }
-//     else {
-//         console.log('doctor is bigger');
-//     }
-// }
-// else {
-//     if (minister > doctor) {
-//         console.log('minister is bigger');
-//     }
-//     else {
-//         console.log('doctor is bigger');
-//     }
-// }
-//OR
-// var res=Math.max(business,minister,doctor);
-// console.log(res);
-
-
-
-//Remove duplicate item from an array
-
-// function removeDuplicate(numbers){
-//     var unique=[];
-//     for (let i = 0; i < numbers.length; i++) {
-//         const element = numbers[i];
-//         var index=unique.indexOf(element);
-//         if(index==-1){
-//             unique.push(element);
-//         }   
-//     }
-//     return unique;
-// }
+//1.2 Calculate Factorial of a number using a while loop
+function factorial(num) {
+    var i = 1;
+    var fac = 1;
+    while (i <= num) {
+        fac = fac * i;
+        i++;
+    }
+    return fac;
+}
+   
+//2: Calculate Factorial in a Recursive function
+function getRecursiveFac(n) {
+    if (n == 0) {
+        return 1;
+    }
+    else {
+        return n * getRecursiveFac(n - 1);
+    }
+}
 
 
-//Count the number of words in a string
-// var speech = "text";
-// var count = 0;
-// for (var i = 0; i < speech.length; i++) {
-//     var element = speech[i];
-//     if (element == ' ' && speech[i - 1] != ' ') {
-//         count++;
-//     }
-// }
-// count++;
+
+//3: Create a Fibonacci Series using a for loop
+function getFibonacci(n) {
+    var fibo = [0, 1];
+    for (let i = 2; i <= n; i++) {
+        fibo[i] = fibo[i - 1] + fibo[i - 2];
+    }
+    return fibo;
+}
+
+
+//4: Fibonacci Element in a Recursive Way
+function getFibonacci(n) {
+    if (n == 0) {
+        return 0;
+    }
+    else if (n == 1) {
+        return 1;
+    }
+    else {
+        return getFibonacci(n - 1) + getFibonacci(n - 2);
+    }
+}
+
+
+//5: Create Fibonacci series in a recursive way
+function getFiboSeries(n) {
+    if (n == 0) {
+        return [0];
+    }
+    else if (n == 1) {
+        return [0, 1];
+    }
+    else {
+        var fibo = getFiboSeries(n - 1);
+        var nextElement = fibo[n - 1] + fibo[n - 2];
+        fibo.push(nextElement);
+    }
+    return fibo;
+}
