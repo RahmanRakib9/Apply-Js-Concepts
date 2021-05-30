@@ -1,39 +1,42 @@
-//Find the largest element of an array OR:
-//Find out the highest marks in your class on math
+//Find max of two values, find max of three values
+// var business = n;
+// var minister = n;
+// var doctor = n;
 
-// function getBigger(marks) {
-//     var max = 0;
-//     for (let i = 0; i < marks.length; i++) {
-//         const element = marks[i];
-//         if (element > max) {
-//             max = element;
-//         }
+// if (business > minister) {
+//     if (business > doctor) {
+//         console.log('businee is bigger');
 //     }
-//     return max;
-// }
-// var highestMarks = [55, 77, 88, 95, 87, 83];
-// console.log(getBigger(highestMarks));
-
-//Sum of all numbers in an array
-// function getSum(num) {
-//     var sum = 0;
-//     for (var i = 0; i < num.length; i++) {
-//         const element = num[i];
-//         sum = sum + element;
+//     else {
+//         console.log('doctor is bigger');
 //     }
-//     return sum;
 // }
-
-
-
-
-//Reverse a string
-// function reverseString(string) {
-//     var reverse = '';
-//     for (var i = 0; i < string.length; i++) {
-//         var character = string[i];
-//         reverse = character + reverse;
+// else {
+//     if (minister > doctor) {
+//         console.log('minister is bigger');
 //     }
-//     return reverse;
+//     else {
+//         console.log('doctor is bigger');
+//     }
 // }
+//OR
+// var res=Math.max(business,minister,doctor);
+// console.log(res);
+
+
+
+//Remove duplicate item from an array
+
+// function removeDuplicate(numbers){
+//     var unique=[];
+//     for (let i = 0; i < numbers.length; i++) {
+//         const element = numbers[i];
+//         var index=unique.indexOf(element);
+//         if(index==-1){
+//             unique.push(element);
+//         }   
+//     }
+//     return unique;
+// }
+
 
